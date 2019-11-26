@@ -10,6 +10,3 @@ variable "us-east-zones" {
   default = ["us-east-1a", "us-east-1b"]
 }
 
-variable "sg-id" {
-  default = "sg-013ca06e09713dd8a"
-}
