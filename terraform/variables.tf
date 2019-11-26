@@ -1,9 +1,9 @@
 variable "key_name" {
-  default = "amit-personal-aws"
+  default = "awspvkey"
 }
 
 variable "pvt_key" {
-  default = "/root/.ssh/amit-personal-aws.pem"
+  default = "/root/.ssh/awspvkey.pem"
 }
 
 variable "us-east-zones" {
