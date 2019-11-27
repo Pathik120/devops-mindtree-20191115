@@ -10,3 +10,6 @@ variable "us-east-zones" {
   default = ["us-east-2b"]
 }
 
+variable "sg-id" {
+  default = "sg-9b0d50fa"
+}
