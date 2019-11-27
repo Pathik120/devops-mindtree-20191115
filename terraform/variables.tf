@@ -3,7 +3,7 @@ variable "key_name" {
 }
 
 variable "pvt_key" {
-  default = "/root/.ssh/awspvkey.pem"
+  default = "/var/lib/jenkins/awspvkey.pem"
 }
 
 variable "us-east-zones" {
