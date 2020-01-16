@@ -12,7 +12,7 @@ provider "aws" {
 resource "aws_instance" "backend" {
   ami                    = "ami-0d5d9d301c853a04a"
   instance_type          = "t2.micro"
-  key_name               = "${var.key_name}"
+  key_name               = "var.key_name"
 
 }
 
@@ -20,8 +20,8 @@ resource "null_resource" "remote-exec-1" {
     connection {
     user        = "ubuntu"
     type        = "ssh"
-    private_key = "${file(var.pvt_key)}"
-    host        = "${aws_instance.backend.public_ip}"
+    private_key = "file(var.pvt_key)"
+    host        = "aws_instance.backend.public_ip"
   }
 
   provisioner "remote-exec" {
